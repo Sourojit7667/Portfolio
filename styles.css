@@ -19,7 +19,6 @@ header {
     color: white; /* Change color if needed */
 }
 
-
 header h1 {
     text-decoration: underline;
 }
@@ -56,6 +55,8 @@ nav ul li a:hover {
     border-radius: 50%;
     margin-top: 20px;
 }
+
+/* Languages Section */
 .languages-section {
     display: flex;
     justify-content: center;
@@ -70,7 +71,8 @@ nav ul li a:hover {
     flex-wrap: wrap; /* Allows items to wrap if needed */
     margin-top: 20px;
 }
-.language-box{
+
+.language-box {
     background: #fdf6f679;
     padding: 5px 12px;
     white-space: nowrap;
@@ -91,8 +93,9 @@ nav ul li a:hover {
     }
     100% {
         transform: translateY(-5px);
-    }
+    }
 }
+
 /* Skills Section */
 .skill {
     margin: 20px auto;
@@ -112,8 +115,9 @@ nav ul li a:hover {
     height: 10px;
     background: linear-gradient(to right, #ff9966, #ff5e62);
     width: 0%;
-    transition: width 1.
+    transition: width 1s;
 }
+
 /* Skill Icons Section */
 .skill-icons {
     width: 500px; /* Fixed width for center alignment */
@@ -155,12 +159,11 @@ nav ul li a:hover {
     }
 }
 
-
-
-
-h2, h3{
+/* Headings */
+h2, h3 {
     text-decoration: underline;
 }
+
 /* Projects Section */
 .projects-container {
     display: flex;
@@ -218,7 +221,6 @@ h2, h3{
     background-color: #4b0082; /* Darker purple on hover */
 }
 
-
 /* Contact Us Section - Vertical Layout */
 form {
     display: flex;
@@ -246,8 +248,9 @@ form button {
 }
 
 form button:hover {
-    background-color: #182848;
+    background-color: #182848;
 }
+
 /* Footer Styles */
 footer {
     background: linear-gradient(to right, #4b6cb7, #182848); /* Mixture of two colors */
@@ -257,5 +260,84 @@ footer {
     font-size: 14px;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 100%;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    /* Header */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Profile Picture */
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Skills Section */
+    .skill {
+        width: 90%;
+    }
+
+    /* Skill Icons Section */
+    .skill-icons {
+        width: 100%;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .project {
+        width: 90%; /* Adjust width */
+        margin-bottom: 20px; /* Add spacing between projects */
+    }
+
+    /* Contact Section */
+    form {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 15px;
+    }
+
+    /* Profile Picture */
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Skills Section */
+    .skill {
+        width: 95%;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    form {
+        width: 90%;
+    }
 }
